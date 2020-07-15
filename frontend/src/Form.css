@@ -1,0 +1,36 @@
+.outerWrapper{
+    height:max-content;
+    background: #29487d;
+    color: #1c1e21;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding: 0 100px;
+}
+form{
+    display: flex;
+    align-items: flex-end;
+}
+.form-group{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+form button{
+    background: #385b99;
+    border: none;
+    padding: 5px;
+    font-size: 10px;
+    color: white;
+    font-weight: bold;
+    outline: none;
+}
+form input{
+    width: 130px;
+    margin-right: 10px;
+}
+form button:hover {
+    cursor: pointer;
+    opacity: 0.6;
+}

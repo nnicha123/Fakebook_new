@@ -1,0 +1,224 @@
+.profileWrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* padding: 0 30px; */
+    background: rgb(230, 228, 228);
+}
+.logoBackground{
+    width: 40px;
+    height: 40px;
+    background-color: rgb(33, 84, 192);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+    margin-right: 10px;
+}
+.navWrapper{
+    background-color: white;
+    width: 100%;
+}
+nav{
+    height: 60px;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    /* width: 100vw; */
+    padding: 0 10px;
+    /* background-color: rgb(197, 196, 196); */
+    box-shadow: 0 1px 5px rgba(0,0,0,0.3);
+    background: white;
+}
+.logoSearch{
+    display: flex;
+    align-items: center;
+}
+.profileWrapper input{
+    background-color: rgb(239, 242, 243);
+    border: none;
+    border-radius: 10px;
+    height: 30px;
+}
+.rightBar{
+    display: flex;
+    align-items: center;
+}
+.rightBar .userInfo{
+    display: flex;
+    align-items: center;
+    background-color: rgb(227, 246, 255);
+    color:rgb(24, 118, 242);   
+    font-weight: bold;
+    margin-right: 10px;
+    height: max-content;
+    padding: 5px;
+    border-radius: 15px;
+}
+.userlogo{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+.rightIcons{
+    display: flex;
+}
+.rightIcons div{
+    background-color: rgb(218, 218, 218);
+    margin: 5px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+.centerIcons{
+    font-size: 25px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.centerIcons > * {
+    padding: 0 40px;
+}
+.profileWrapper header, .profileWrapper .coverImg{
+    height: 300px;
+    width: 60%;
+    overflow: hidden;
+    position: relative;
+    border-radius: 20px;
+}
+
+.profileWrapper header .coverImage,.profileWrapper .coverImg .coverImage{
+    width: 100%;
+    height: 120%;
+}
+.profileImage{
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    border: 5px solid white;
+    position: absolute;
+    bottom: 220px;
+    left: 550px;
+}
+
+.contentPage{
+    min-height: 100vh;
+    width: 60vw;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.contentLeft{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    margin-top: 10px;
+}
+.contentLeft .about{
+    height: 300px;
+    margin: 10px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.3);
+    padding: 10px;
+}
+/* .contentRight{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    margin-top: 10px;
+} */
+.contentRight .addPost{
+    height: 130px;
+    margin: 10px;
+    margin-top: 20px;
+    border-radius: 10px;
+    background-color: white;
+}
+.contentRight .posts{
+    height: 300px;
+    margin: 20px 10px;
+    border-radius: 10px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px;
+}
+.addPostTop{
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.addPostTop input{
+    margin-left: 5px;
+    width: 290px;
+}
+.addPostBottom {
+    display: flex;
+    justify-content: center;
+}
+.addPostBottom input{
+    width: 324px;
+}
+.outerHead{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 1px 5px rgba(0,0,0,0.3);
+    background: white;
+}
+.head{
+    height: 440px;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.head .coverImg{
+    overflow: hidden;
+    width: 100%;
+}
+.headerOptions{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* position: relative; */
+    width: 100%;
+    border-top: 1px solid rgb(196, 196, 196);
+}
+
+.optionList{
+    display: flex;
+    list-style: none;
+}
+.optionList li{
+    padding: 10px;
+}
+.numberOfFriends{
+    background-color: rgb(230, 228, 228);
+    width: 25px;
+    height: 25px;
+    display: flex;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+}
+.friendDiv{
+    display: grid;
+    grid-template-columns: repeat(3,100px);
+    grid-column-gap: 10px;
+}
+.friendDiv .friendsPics{
+    width: 100%;
+}
+.posterInfo{
+    display:flex;
+    align-items: center;
+}
+.posterInfo img{
+    margin-right: 10px;
+}

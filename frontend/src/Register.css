@@ -1,0 +1,33 @@
+.outerRegister{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.registerLeft{
+    height: 100vh;
+}
+.registerRight form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 40px;
+}
+
+.registerRight form .form-group input{
+    width: 320px;
+    padding: 10px 5px;
+    border-radius: 5px;
+    border: 1px solid cornflowerblue;
+    outline: none;
+}
+.registerRight form .nameGroup{
+    display: flex;
+}
+.registerRight form .nameGroup .form-group input{
+    width: 150px;
+}
+.registerRight form button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
