@@ -111,7 +111,9 @@ class MyProfile extends Component {
                                 <div className="friendDiv">
                                     {this.state.friendInfo.map((el, indx) => {
                                         return <div key={indx + 1} onClick={() => this.goToProfile(el.username)}>
-                                            <img src={el.profile_pic} className="friendsPics" />
+                                            <div className="friendImg">
+                                                <img src={el.profile_pic} className="friendsPics" />
+                                            </div>
                                             <p style={{ margin: 0 }}>{el.first_name}</p>
                                         </div>
                                     })}
@@ -119,8 +121,24 @@ class MyProfile extends Component {
                             </div>
                             <div className="about">
                                 <h4>About</h4>
+                                <p>Software Engineer at TOYOTA TSUSHO DENSO ELECTRONICS (THAILAND) CO., LTD.</p>
+                                <p>Education: Electronic and Telecommunication Engineering at KMUTT</p>
+                                <p>Single</p>
                             </div>
-                            <div className="about"></div>
+                            <div className="about" style={{ height: '200px' }}>
+                                <h4>Images</h4>
+                                <div className="friendDiv">
+                                    <div className="friendImg" style={{ borderRadius: '5px', overflow: 'hidden' }}>
+                                        <img src="images/img1.jpg" />
+                                    </div>
+                                    <div className="friendImg">
+                                        <img src="images/img2.jpg" />
+                                    </div>
+                                    <div className="friendImg">
+                                        <img src="images/img3.jpg" />
+                                    </div>
+                                </div>
+                            </div>
                             <div className="about"></div>
                         </div>
                         <div className="contentRight">
@@ -133,10 +151,34 @@ class MyProfile extends Component {
                                     <input type="text" placeholder="Image url" />
                                 </div>
                             </div>
+                            <div className="about" style={{ marginTop: '20px', height: '400px', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+                                <div style={{ width: '100%' }}>
+                                    <div style={{ display: 'flex', alignItems: 'center' }}>
+                                        <img src={this.state.profile_pic} className="userlogo" />
+                                        <p style={{ marginLeft: '10px' }}>{this.state.first_name} {this.state.last_name}</p>
+                                    </div>
+                                </div>
+
+                                <div className="postImage">
+                                    <img src="posts/post.png" />
+                                </div>
+                            </div>
+                            <div className="about" style={{ marginTop: '20px', height: '400px', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+                                <div style={{ width: '100%' }}>
+                                    <div style={{ display: 'flex', alignItems: 'center' }}>
+                                        <img src={this.state.profile_pic} className="userlogo" />
+                                        <p style={{ marginLeft: '10px' }}>{this.state.first_name} {this.state.last_name}</p>
+                                    </div>
+                                </div>
+
+                                <div className="postImage">
+                                    <img src="posts/post.png" />
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
+            </div >
         )
 
     }
